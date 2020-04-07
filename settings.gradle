@@ -1,0 +1,2 @@
+rootProject.name='LoginSchoolPool'
+include ':app'

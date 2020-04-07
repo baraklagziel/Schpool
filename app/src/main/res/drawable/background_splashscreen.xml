@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/white"/>
+<!--    <item android:top="25dp">-->
+<!--        <bitmap-->
+<!--            android:gravity="top"-->
+<!--            android:src="@drawable/main_logo" />-->
+<!--    </item>-->
+
+    <item android:top="100dp" >
+            <bitmap
+                android:gravity="top|center_horizontal"
+                android:src="@drawable/main_logo" />
+        </item>
+
+
+    <!--    <item-->
+<!--        android:width="250dp"-->
+<!--        android:height="250dp">-->
+<!--        <bitmap-->
+<!--            android:src="@drawable/main_logo"-->
+<!--            android:gravity="center|fill|right" />-->
+<!--    </item>-->
+
+</layer-list>

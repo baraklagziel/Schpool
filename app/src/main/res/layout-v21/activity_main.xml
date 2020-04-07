@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/size"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiwnt_blue_and_purple"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edit_text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/imageViewSchpoolLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_light"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFAFA"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="287dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_psw"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_light"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFAFA"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/view_left_line"
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="206dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dip" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="206dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dip" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="#ffffff"
+        android:paddingBottom="10dip" />
+
+    <ImageView
+        android:id="@+id/imageViewSchpoolLogo"
+        android:layout_width="250dp"
+        android:layout_height="203dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/main_logo" />
+
+    <Button
+        android:id="@+id/button_login_now"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edit_text_password"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="290dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/quicksand_medium"
+        android:shadowRadius="1.0"
+        android:text="Login Now" />
+
+    <TextView
+        android:id="@+id/textView_dont_remember_the_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="243dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Don't remember the password ?"
+        android:textColor="#FFFAFA" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:text="or"
+        android:textColor="#FFFAFA" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="116dp"
+        android:drawableLeft="@drawable/logo_size"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Sign in with facebook"
+        android:textColor="#FFFAFA"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Don't have an account ?"
+        android:textColor="#FFFAFA" />
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="86dp"-->
+<!--        android:layout_marginBottom="122dp"-->
+<!--        app:srcCompat="@drawable/facebook_logo" />-->
+
+
+
+
+
+</RelativeLayout>
