@@ -10,7 +10,7 @@
 
 
     <EditText
-        android:id="@+id/edit_text_username"
+        android:id="@+id/edit_text_email"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_below="@+id/imageViewSchpoolLogo"
@@ -20,7 +20,7 @@
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
         android:fontFamily="@font/quicksand_light"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:textColorHint="#FFFAFA"
         android:textSize="16dp" />
@@ -40,37 +40,6 @@
         android:inputType="textPassword"
         android:textColorHint="#FFFAFA"
         android:textSize="16dp" />
-
-    <View
-        android:id="@+id/view_left_line"
-        android:layout_width="120dp"
-        android:layout_height="1dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="206dp"
-        android:background="#ffffff"
-        android:paddingBottom="10dip" />
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="120dp"
-        android:layout_height="1dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="206dp"
-        android:background="#ffffff"
-        android:paddingBottom="10dip" />
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="1dip"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:background="#ffffff"
-        android:paddingBottom="10dip" />
 
     <ImageView
         android:id="@+id/imageViewSchpoolLogo"
@@ -108,45 +77,6 @@
         android:layout_marginBottom="243dp"
         android:fontFamily="@font/quicksand_medium"
         android:text="Don't remember the password ?"
-        android:textColor="#FFFAFA" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="200dp"
-        android:text="or"
-        android:textColor="#FFFAFA" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="198dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="116dp"
-        android:drawableLeft="@drawable/logo_size"
-        android:drawablePadding="4dp"
-        android:fontFamily="@font/quicksand_medium"
-        android:text="Sign in with facebook"
-        android:textColor="#FFFAFA"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="60dp"
-        android:fontFamily="@font/quicksand_medium"
-        android:text="Don't have an account ?"
         android:textColor="#FFFAFA" />
 
     <!--    <ImageView-->

@@ -1,0 +1,47 @@
+[
+   {
+      "driverName":"Sahar",
+      "licensePlateNumber":"123123123",
+      "availableSeats":2,
+      "carColor":"Blue",
+      "startingPoint":"123 Rotshild st",
+      "timeOfDeparture":"08:00",
+      "monthOfDeparture":"July",
+      "dayOfMonth":"13",
+      "passengers":[
+         {
+            "name":"Sahar",
+            "password":"password",
+            "email":"test@mail.com",
+            "id":"1512434",
+            "sclass":"Computers Science",
+            "gender":"Male",
+            "address" : "87 Hertzel st"
+         },
+         {
+            "name":"Barak",
+            "password":"password",
+            "email":"test@mail.com",
+            "id":"1512434",
+            "sclass":"Computers Science",
+            "gender":"Male",
+            "address" : "2 David st"
+         }
+      ]
+   },
+   {
+      "driverName":"Olga",
+      "licensePlateNumber":"123123123",
+      "availableSeats":2,
+      "carColor":"Blue",
+      "startingPoint":"123 Rotshild st",
+      "timeOfDeparture":"08:00",
+      "monthOfDeparture":"July",
+      "dayOfMonth":"13",
+      "passengers":[
+         {
+
+         }
+      ]
+   }
+]

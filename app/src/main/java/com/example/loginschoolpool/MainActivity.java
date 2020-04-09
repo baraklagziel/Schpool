@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.List;
 import java.util.regex.Pattern;
 
 /**
@@ -38,14 +39,18 @@ public class MainActivity extends AppCompatActivity {
     private EditText textInputUserName;
     private EditText textInputPassword;
     private Button buttonLogin;
+    private static User loggenInUser;
+
+    public static User getLoggenInUser() {
+        return loggenInUser;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        textInputUserName = (EditText) findViewById(R.id.edit_text_username);
+        textInputUserName = (EditText) findViewById(R.id.edit_text_email);
         textInputPassword = (EditText) findViewById(R.id.edit_text_password);
         buttonLogin = (Button) findViewById(R.id.button_login_now);
 
@@ -53,53 +58,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 confirmInput(v);
-                System.out.println("success\n");
             }
         });
     }
 
-    private boolean validateUsername() {
-//        String usernameInput = textInputUserName.getText().toString().trim();
-//
-//        if (usernameInput.isEmpty()) {
-//            textInputUserName.setError(getResources().getString(R.string.EMPTY_USERNAME));
-//            return false;
-//        } else if (!Patterns.EMAIL_ADDRESS.matcher(usernameInput).matches()) {
-//            textInputUserName.setError(getResources().getString(R.string.USERNAME_INVALID));
-//            return false;
-//        } else {
-//            textInputUserName.setError(null);
-//            return true;
-//        }
-        return true;
-    }
-
-    private boolean validatePassword() {
+    private void confirmInput(View v) {
+        String usernameInput = textInputUserName.getText().toString().trim();
         String passwordInput = textInputPassword.getText().toString().trim();
-
-        if (passwordInput.isEmpty()) {
-            textInputPassword.setError(getResources().getString(R.string.EMPTY_PASSWORD));
-            return false;
-        } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
-            textInputPassword.setError(getResources().getString(R.string.PASSWORD_INVALID));
-            return false;
-        } else {
-            textInputPassword.setError(null);
-            return true;
-        }
-    }
-
-    public void confirmInput(View v) {
-        if (!validateUsername() | !validatePassword()) {
+        loggenInUser = ValidationTool.validateUsernameAndPassword(usernameInput,passwordInput);
+        if (loggenInUser == null) {
+            Toast.makeText(this, "Email or password are incorrect", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        String input = null;
-        input += "Username: " + textInputUserName.getText().toString();
-        input += "\n";
-        input += "Password: " + textInputPassword.getText().toString();
-
-      //  Toast.makeText(this, input, Toast.LENGTH_SHORT).show();
+        String input = "Welcome " + loggenInUser.getName() + "!";
+        Toast.makeText(this, input, Toast.LENGTH_LONG).show();
         openAppActivity();
     }
 
@@ -107,6 +80,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,AppActivity.class);
         startActivity(intent);
     }
-
-
 }

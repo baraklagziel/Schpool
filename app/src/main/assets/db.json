@@ -1,0 +1,92 @@
+﻿[
+    {
+      "name": "Sahar",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "1512434",
+      "sclass": "Computers Science",
+      "gender": "Male",
+      "address" : "123 Rotshild st"
+    },
+    {
+      "name": "Moshe",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "1512421334",
+      "sclass": "Computers Science",
+      "gender": "Male",
+      "address" : "3 Rotshild st"
+    },
+    {
+      "name": "Olga",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "1512111434",
+      "sclass": "Computers Science",
+      "gender": "Female",
+      "address" : "8 Hen st"
+    },
+    {
+      "name": "Barak",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "1512434",
+      "sclass": "Computers Science",
+      "gender": "Male",
+      "address" : "9 Allenby st"
+    },
+    {
+      "name": "Toma",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "4324",
+      "sclass": "Computers Science",
+      "gender": "Male",
+      "address" : "96 Rotshild st"
+    },
+    {
+      "name": "Tomer",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "123123",
+      "sclass": "Computers Science",
+      "gender": "Male",
+      "address" : "4 Jabotinsky st"
+    },
+    {
+      "name": "Dror",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "4214",
+      "sclass": "Computers Science",
+      "gender": "Male",
+      "address" : "4 Tel st"
+    },
+    {
+      "name": "Sapir",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "1512434",
+      "sclass": "Computers Science",
+      "gender": "Female",
+      "address" : "123 Bloomfield st"
+    },
+    {
+      "name": "Almog",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "151asdsad2434",
+      "sclass": "Computers Science",
+      "gender": "Female",
+      "address" : "4 Rishonim st"
+    },
+    {
+      "name": "Gabi",
+      "password": "password",
+      "email": "test@mail.com",
+      "id": "151241134",
+      "sclass": "Computers Science",
+      "gender": "Male",
+      "address" : "2 Rotshild st"
+    }
+]
