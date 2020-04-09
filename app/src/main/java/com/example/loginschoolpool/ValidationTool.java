@@ -2,8 +2,8 @@ package com.example.loginschoolpool;
 
 public class ValidationTool {
 
+    // This method Validates Email and password are correct.
     public static User validateUsernameAndPassword(String inputEmail, String inputPassword) {
-
         for (User user : Utils.getDb())
         {
             String currentEmail = user.getEmail();

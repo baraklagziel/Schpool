@@ -10,28 +10,23 @@ import java.util.List;
 
 public class Utils {
     private static List<User> db;
-    private static List<Ride> rideDb;
 
+    // This method updates the Users database at launching
     public static void updateDB(AssetManager manager) {
         String allJson = readAllLines(manager,"db.json");
         Gson gson = new Gson();
         db = gson.fromJson(allJson, new TypeToken<List<User>>() {}.getType());
     }
 
-    public static List<User> getDb() {
-        return db;
-    }
-
-    public void setDb(List<User> db) {
-        this.db = db;
-    }
-
+    // This method updates the Rides database at launching
     public static void updateRideDB(AssetManager manager) {
         String allJson = readAllLines(manager,"rides.json");
         Gson gson = new Gson();
-        rideDb = gson.fromJson(allJson, new TypeToken<List<Ride>>() {}.getType());
+        List<Ride> rideDb = gson.fromJson(allJson, new TypeToken<List<Ride>>() {}.getType());
+        RideManager.setRideDb(rideDb);
     }
 
+    // This method reads all lines from DB object
     private static String readAllLines(AssetManager manager, String fileName){
         BufferedReader reader = null;
         String all = "";
@@ -47,7 +42,8 @@ public class Utils {
         return all;
     }
 
-    public static List<Ride> getRideDb() {
-        return rideDb;
+    // Getter for Users DB
+    public static List<User> getDb() {
+        return db;
     }
 }

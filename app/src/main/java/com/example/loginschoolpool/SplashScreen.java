@@ -17,8 +17,8 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Utils.updateRideDB(getAssets()); // Update rides DB
         Utils.updateDB(getAssets()); //Update Database
+        Utils.updateRideDB(getAssets()); // Update rides DB
 
         Thread t = new Thread(new Runnable() {
             @Override

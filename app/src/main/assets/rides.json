@@ -5,9 +5,9 @@
       "availableSeats":2,
       "carColor":"Blue",
       "startingPoint":"123 Rotshild st",
-      "timeOfDeparture":"08:00",
-      "monthOfDeparture":"July",
-      "dayOfMonth":"13",
+      "timeOfDeparture":8,
+      "monthOfDeparture":7,
+      "dayOfMonth":13,
       "passengers":[
          {
             "name":"Sahar",
@@ -35,13 +35,9 @@
       "availableSeats":2,
       "carColor":"Blue",
       "startingPoint":"123 Rotshild st",
-      "timeOfDeparture":"08:00",
-      "monthOfDeparture":"July",
-      "dayOfMonth":"13",
-      "passengers":[
-         {
-
-         }
-      ]
+      "timeOfDeparture":9,
+      "monthOfDeparture":4,
+      "dayOfMonth":10,
+      "passengers":[]
    }
 ]
