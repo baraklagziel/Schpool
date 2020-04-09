@@ -41,10 +41,6 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonLogin;
     private static User loggenInUser;
 
-    public static User getLoggenInUser() {
-        return loggenInUser;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,5 +75,8 @@ public class MainActivity extends AppCompatActivity {
     private void openAppActivity() {
         Intent intent = new Intent(this,AppActivity.class);
         startActivity(intent);
+    }
+    public static User getLoggenInUser() {
+        return loggenInUser;
     }
 }
